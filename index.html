@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formatura Psicologia UniViçosa 🎓</title>
+  <link rel="icon" href="https://twemoji.maxcdn.com/v/latest/72x72/1f393.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Fundo decorativo (símbolos de formatura e psicologia Ψ) -->
+  <div class="bg-decor">
+    <span class="decor psi1">Ψ</span>
+    <span class="decor cap1">🎓</span>
+    <span class="decor psi2">Ψ</span>
+    <span class="decor cap2">🎓</span>
+    <span class="star s1">✨</span>
+    <span class="star s2">✨</span>
+  </div>
+
+  <!-- TELA DA CONTAGEM REGRESSIVA -->
+  <main id="countdown-view" class="container">
+    <p class="eyebrow">Rumo ao grande dia → 11 de Dezembro de 2026</p>
+    <h1 class="title">Formatura de <span>Psicologia</span></h1>
+    <p class="subtitle">A melhor turma da UniViçosa a um passo do CRP! 🧠✨</p>
+
+    <!-- Data ajustada para 11/12/2026 -->
+    <div class="countdown" id="countdown" data-target="2026-12-11T00:00:00">
+      <div class="time-box">
+        <span class="number" id="days">00</span>
+        <span class="label">dias</span>
+      </div>
+      <div class="time-box">
+        <span class="number" id="hours">00</span>
+        <span class="label">horas</span>
+      </div>
+      <div class="time-box">
+        <span class="number" id="minutes">00</span>
+        <span class="label">min</span>
+      </div>
+      <div class="time-box">
+        <span class="number" id="seconds">00</span>
+        <span class="label">seg</span>
+      </div>
+    </div>
+
+    <p class="footer-msg">Foram anos de teorias, estágios e resiliência... O diploma vem! 🎓</p>
+  </main>
+
+  <!-- TELA DO DIA FINAL (exibida quando a contagem zerar) -->
+  <main id="final-view" class="container final hidden">
+    <canvas id="confetti-canvas"></canvas>
+    <div class="final-content">
+      <span class="final-icon">🎓</span>
+      <h1 class="final-title">ENFIM, PSICÓLOGOS!</h1>
+      <p class="final-subtitle">O grande dia chegou! Parabéns, Psicologia UniViçosa! 🥂✨</p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
