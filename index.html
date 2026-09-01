@@ -3,61 +3,89 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Formatura Psicologia UniViçosa 🎓</title>
-  <link rel="icon" href="https://twemoji.maxcdn.com/v/latest/72x72/1f393.png" />
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+  <title>Formatura de Psicologia — UniViçosa</title>
+  
+  <!-- Fontes de Alta Caligrafia e Tipografia Editorial -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Fundo decorativo (símbolos de formatura e psicologia Ψ) -->
-  <div class="bg-decor">
-    <span class="decor psi1">Ψ</span>
-    <span class="decor cap1">🎓</span>
-    <span class="decor psi2">Ψ</span>
-    <span class="decor cap2">🎓</span>
-    <span class="star s1">✨</span>
-    <span class="star s2">✨</span>
+  <!-- Elementos artísticos de fundo (Psicologia e Brilhos) -->
+  <div class="art-backdrop">
+    <span class="symbol psi p1">Ψ</span>
+    <span class="symbol psi p2">Ψ</span>
+    <span class="symbol psi p3">Ψ</span>
+    <span class="symbol star s1">✨</span>
+    <span class="symbol star s2">✨</span>
+    <span class="symbol star s3">✨</span>
+    <div class="light-grain"></div>
   </div>
 
-  <!-- TELA DA CONTAGEM REGRESSIVA -->
-  <main id="countdown-view" class="container">
-    <p class="eyebrow">Rumo ao grande dia → 11 de Dezembro de 2026</p>
-    <h1 class="title">Formatura de <span>Psicologia</span></h1>
-    <p class="subtitle">A melhor turma da UniViçosa a um passo do CRP! 🧠✨</p>
+  <!-- Pôster Principal -->
+  <main class="poster-frame">
+    <div class="inner-border">
+      
+      <header class="header">
+        <p class="institution">UniViçosa • Turma de Psicologia</p>
+        <div class="divider-line">
+          <span class="center-symbol">Ψ</span>
+        </div>
+      </header>
 
-    <!-- Data ajustada para 11/12/2026 -->
-    <div class="countdown" id="countdown" data-target="2026-12-11T00:00:00">
-      <div class="time-box">
-        <span class="number" id="days">00</span>
-        <span class="label">dias</span>
-      </div>
-      <div class="time-box">
-        <span class="number" id="hours">00</span>
-        <span class="label">horas</span>
-      </div>
-      <div class="time-box">
-        <span class="number" id="minutes">00</span>
-        <span class="label">min</span>
-      </div>
-      <div class="time-box">
-        <span class="number" id="seconds">00</span>
-        <span class="label">seg</span>
-      </div>
+      <section class="body-content">
+        <span class="calligraphy-lead">Rumo ao grande dia</span>
+        <h1 class="main-title">A Nossa Formatura</h1>
+        <p class="target-date">11 • Dezembro • 2026</p>
+
+        <!-- Contagem Linear Orgânica -->
+        <div class="linear-countdown" id="countdown" data-target="2026-12-11T00:00:00">
+          <div class="unit">
+            <span class="num" id="days">00</span>
+            <span class="lbl">dias</span>
+          </div>
+          <span class="dot">·</span>
+          <div class="unit">
+            <span class="num" id="hours">00</span>
+            <span class="lbl">horas</span>
+          </div>
+          <span class="dot">·</span>
+          <div class="unit">
+            <span class="num" id="minutes">00</span>
+            <span class="lbl">min</span>
+          </div>
+          <span class="dot">·</span>
+          <div class="unit">
+            <span class="num" id="seconds">00</span>
+            <span class="lbl">seg</span>
+          </div>
+        </div>
+
+        <p class="poetic-text">
+          Cada mente compreendida, cada passo trilhado. ✨<br />
+          O diploma e o CRP estão logo ali.
+        </p>
+      </section>
+
+      <footer class="footer">
+        <span class="footer-psi">Ψ</span>
+      </footer>
+
     </div>
-
-    <p class="footer-msg">Foram anos de teorias, estágios e resiliência... O diploma vem! 🎓</p>
   </main>
 
-  <!-- TELA DO DIA FINAL (exibida quando a contagem zerar) -->
-  <main id="final-view" class="container final hidden">
+  <!-- Visual quando zerar o cronômetro -->
+  <div id="final-screen" class="final-screen hidden">
     <canvas id="confetti-canvas"></canvas>
-    <div class="final-content">
-      <span class="final-icon">🎓</span>
-      <h1 class="final-title">ENFIM, PSICÓLOGOS!</h1>
-      <p class="final-subtitle">O grande dia chegou! Parabéns, Psicologia UniViçosa! 🥂✨</p>
+    <div class="final-box">
+      <span class="final-psi">Ψ</span>
+      <h2 class="final-calligraphy">Enfim, Psicólogos</h2>
+      <p class="final-sub">Parabéns à melhor turma da UniViçosa! ✨</p>
     </div>
-  </main>
+  </div>
 
   <script src="script.js"></script>
 </body>
