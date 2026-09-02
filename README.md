@@ -2,13 +2,12 @@
 
 Uma página simples e elegante que criei para acompanhar os dias que faltam até a formatura da minha turma de Psicologia na UniViçosa (11 de dezembro de 2026).
 
-👉 **[Clique aqui para ver a página funcionando](https://leticiawsa.github.io/turma-2022/)**
+➪ **[Clique aqui para ver a página funcionando](https://leticiawsa.github.io/turma-2022/)**
 
 ---
 
 ## 📸 Como ficou
  
-!(preview.png)
 <img width="1810" height="889" alt="turma-2022" src="https://github.com/user-attachments/assets/48b1dac4-be50-49fa-afe7-06efb76b21ae" />
 
 ---
