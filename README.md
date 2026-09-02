@@ -8,7 +8,7 @@ Uma página simples e elegante que criei para acompanhar os dias que faltam até
 
 ## 📸 Como ficou
  
-![Foto do site](preview.png)
+!(preview.png)
 <img width="1810" height="889" alt="turma-2022" src="https://github.com/user-attachments/assets/48b1dac4-be50-49fa-afe7-06efb76b21ae" />
 
 ---
