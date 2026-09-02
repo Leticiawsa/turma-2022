@@ -6,7 +6,7 @@ Uma página simples e elegante que criei para acompanhar os dias que faltam até
 
 ---
 
-## 📸 Como ficou
+##  Como ficou:
  
 <img width="1810" height="889" alt="turma-2022" src="https://github.com/user-attachments/assets/48b1dac4-be50-49fa-afe7-06efb76b21ae" />
 
@@ -18,7 +18,7 @@ Estou aprendendo a programar e decidi sair da teoria criando algo de verdade. Co
 
 ---
 
-##  O que tem na página
+##  O que tem na página:
 
 - Contagem de dias, horas, minutos e segundos atualizada a cada segundo.
 - Design em linha, limpo e pensado para funcionar bem no computador e no celular.
@@ -27,7 +27,7 @@ Estou aprendendo a programar e decidi sair da teoria criando algo de verdade. Co
 
 ---
 
-##  O que usei
+##  O que usei:
 
 - **HTML5:** Para montar a estrutura e os textos.
 - **CSS3:** Para criar o visual, as cores e a adaptação para telas de celular.
