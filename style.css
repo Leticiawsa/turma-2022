@@ -258,12 +258,73 @@ body {
 
 /* ===== RESPONSIVO ===== */
 @media (max-width: 600px) {
-  .inner-border { padding: 2.5rem 1rem; }
-  .calligraphy-lead { font-size: 2.6rem; }
-  .main-title { font-size: 1.3rem; letter-spacing: 3px; }
-  .linear-countdown { gap: 0.4rem; padding: 1rem 0.5rem; flex-wrap: nowrap; }
-  .num { font-size: 1.6rem; }
-  .lbl { font-size: 0.65rem; }
-  .dot { font-size: 1rem; }
-  .final-calligraphy { font-size: 3.2rem; }
+  body {
+    padding: 0.75rem; /* Menos margem nas bordas da tela */
+  }
+
+  .poster-frame {
+    padding: 0.75rem;
+  }
+
+  .inner-border {
+    padding: 2rem 0.5rem; /* Libera espaço horizontal */
+  }
+
+  .calligraphy-lead {
+    font-size: 2.3rem;
+  }
+
+  .main-title {
+    font-size: 1.15rem;
+    letter-spacing: 2px;
+  }
+
+  .target-date {
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    margin-bottom: 1.8rem;
+  }
+
+  /* Ajuste preciso para a linha caber inteira sem quebrar */
+  .linear-countdown {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly; /* Distribui os 4 blocos uniformemente */
+    gap: 0.15rem;
+    padding: 0.8rem 0;
+    margin: 1.2rem 0 2rem;
+  }
+
+  .unit {
+    flex-direction: column; /* No celular, o texto (dias/horas) fica logo abaixo do número */
+    align-items: center;
+    gap: 0.1rem;
+  }
+
+  .num {
+    font-size: 1.35rem; /* Tamanho proporcional para não vazar */
+  }
+
+  .lbl {
+    font-size: 0.6rem;
+    letter-spacing: 0.5px;
+  }
+
+  .dot {
+    font-size: 1rem;
+    align-self: center;
+    opacity: 0.4;
+    transform: translateY(-4px);
+  }
+
+  .poetic-text {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    padding: 0 0.5rem;
+  }
+
+  .final-calligraphy {
+    font-size: 2.8rem;
+  }
 }
