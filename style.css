@@ -1,4 +1,3 @@
-/* ===== ESTILO ARTÍSTICO & EDITORIAL REFINADO ===== */
 * {
   margin: 0;
   padding: 0;
@@ -23,7 +22,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* ===== FUNDO DECORATIVO ===== */
+
 .art-backdrop {
   position: fixed;
   inset: 0;
@@ -66,7 +65,7 @@ body {
   50% { opacity: 0.55; transform: scale(1.15); }
 }
 
-/* ===== PÔSTER / CARD COM MICROINTERAÇÃO DE UX ===== */
+
 .poster-frame {
   position: relative;
   z-index: 1;
@@ -107,7 +106,7 @@ body {
   position: relative;
 }
 
-/* ===== CABEÇALHO ===== */
+
 .institution {
   font-family: 'Cinzel', serif;
   font-size: 0.76rem;
@@ -141,7 +140,7 @@ body {
   text-shadow: 0 0 10px rgba(223, 190, 91, 0.3);
 }
 
-/* ===== TIPOGRAFIA PRINCIPAL ===== */
+
 .calligraphy-lead {
   font-family: 'Alex Brush', cursive;
   font-size: 3.4rem;
@@ -171,7 +170,7 @@ body {
   font-weight: 400;
 }
 
-/* ===== CONTAGEM LINEAR (UX DE DIGITAÇÃO FIXA) ===== */
+
 .linear-countdown {
   display: inline-flex;
   align-items: baseline;
@@ -197,7 +196,7 @@ body {
   font-weight: 600;
   color: #ffffff;
   line-height: 1;
-  /* Garante largura idêntica nos números para o layout não ficar oscilando */
+
   font-variant-numeric: tabular-nums;
   text-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
 }
@@ -216,11 +215,11 @@ body {
   opacity: 0.7;
 }
 
-/* ===== TEXTO POÉTICO INFERIOR ===== */
+
 .poetic-text {
   font-size: 0.92rem;
   line-height: 1.9;
-  color: #bfd3e8; /* Mais contraste contra o fundo */
+  color: #bfd3e8; 
   font-weight: 300;
   letter-spacing: 0.6px;
   max-width: 440px;
@@ -237,7 +236,7 @@ body {
   font-size: 1.15rem;
 }
 
-/* ===== TELA FINAL ===== */
+
 .final-screen {
   position: fixed;
   inset: 0;
@@ -286,7 +285,7 @@ body {
   margin-top: 1rem;
 }
 
-/* ===== RESPONSIVO OTIMIZADO ===== */
+
 @media (max-width: 600px) {
   body {
     padding: 0.75rem;
