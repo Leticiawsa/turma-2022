@@ -1,4 +1,4 @@
-/* ===== ESTILO ARTÍSTICO & EDITORIAL ===== */
+/* ===== ESTILO ARTÍSTICO & EDITORIAL REFINADO ===== */
 * {
   margin: 0;
   padding: 0;
@@ -7,22 +7,23 @@
 
 body {
   min-height: 100vh;
-  background-color: #050b14;
+  background-color: #030811;
   background-image: 
-    radial-gradient(circle at 50% 20%, #0d223a 0%, transparent 60%),
-    radial-gradient(circle at 80% 80%, #08162b 0%, transparent 50%),
-    linear-gradient(180deg, #04080f 0%, #0a1322 100%);
-  color: #e5ecf5;
+    radial-gradient(ellipse 70% 50% at 50% 15%, rgba(20, 48, 86, 0.45) 0%, transparent 80%),
+    radial-gradient(circle at 85% 85%, rgba(13, 31, 56, 0.5) 0%, transparent 60%),
+    linear-gradient(180deg, #02050b 0%, #060e1a 100%);
+  color: #edf2f9;
   font-family: 'Montserrat', sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1.5rem;
+  padding: 2rem 1.5rem;
   overflow-x: hidden;
   position: relative;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* ===== FUNDO ARTÍSTICO & FLUTUAÇÃO ===== */
+/* ===== FUNDO DECORATIVO ===== */
 .art-backdrop {
   position: fixed;
   inset: 0;
@@ -33,57 +34,75 @@ body {
 .symbol {
   position: absolute;
   user-select: none;
-  filter: blur(0.3px);
-  animation: gentleFloat 12s ease-in-out infinite alternate;
+  filter: blur(0.5px);
+  animation: gentleFloat 14s ease-in-out infinite alternate;
 }
 
 .psi {
   font-family: 'Cinzel', serif;
-  color: rgba(94, 149, 219, 0.12);
+  color: rgba(94, 149, 219, 0.08);
 }
 
-.p1 { font-size: 8rem; top: 8%; left: 6%; animation-delay: 0s; }
-.p2 { font-size: 10rem; bottom: 8%; right: 5%; animation-delay: -4s; }
-.p3 { font-size: 5rem; top: 60%; left: 85%; animation-delay: -7s; }
+.p1 { font-size: 8rem; top: 10%; left: 8%; animation-delay: 0s; }
+.p2 { font-size: 11rem; bottom: 6%; right: 6%; animation-delay: -5s; }
+.p3 { font-size: 5rem; top: 55%; left: 88%; animation-delay: -8s; }
 
 .star {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   opacity: 0.35;
 }
 
 .s1 { top: 22%; right: 18%; animation: pulseGlow 4s ease-in-out infinite; }
-.s2 { bottom: 25%; left: 12%; animation: pulseGlow 5s ease-in-out infinite 1.5s; }
-.s3 { top: 75%; right: 28%; animation: pulseGlow 4.5s ease-in-out infinite 0.8s; }
+.s2 { bottom: 25%; left: 14%; animation: pulseGlow 5s ease-in-out infinite 1.5s; }
+.s3 { top: 70%; right: 26%; animation: pulseGlow 4.5s ease-in-out infinite 0.8s; }
 
 @keyframes gentleFloat {
   0% { transform: translateY(0px) rotate(0deg); }
-  100% { transform: translateY(-25px) rotate(3deg); }
+  100% { transform: translateY(-20px) rotate(3deg); }
 }
 
 @keyframes pulseGlow {
-  0%, 100% { opacity: 0.2; transform: scale(0.9); }
-  50% { opacity: 0.6; transform: scale(1.15); }
+  0%, 100% { opacity: 0.15; transform: scale(0.9); }
+  50% { opacity: 0.55; transform: scale(1.15); }
 }
 
-/* ===== PÔSTER / MOLDURA ===== */
+/* ===== PÔSTER / CARD COM MICROINTERAÇÃO DE UX ===== */
 .poster-frame {
   position: relative;
   z-index: 1;
   width: 100%;
-  max-width: 680px;
-  background: rgba(8, 17, 31, 0.7);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(138, 180, 248, 0.18);
+  max-width: 650px;
+  background: rgba(8, 18, 33, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(138, 180, 248, 0.22);
+  border-radius: 6px;
   box-shadow: 
-    0 20px 50px rgba(0, 0, 0, 0.6),
-    inset 0 0 40px rgba(16, 37, 66, 0.3);
-  padding: 1.5rem;
+    0 25px 60px -10px rgba(0, 0, 0, 0.75),
+    0 0 35px rgba(22, 53, 95, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  padding: 1.25rem;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: cardEntrance 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.poster-frame:hover {
+  transform: translateY(-3px);
+  box-shadow: 
+    0 30px 70px -10px rgba(0, 0, 0, 0.85),
+    0 0 45px rgba(35, 75, 130, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+@keyframes cardEntrance {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .inner-border {
-  border: 1px solid rgba(212, 175, 55, 0.3); /* Toque dourado sutil */
-  padding: 3.5rem 2rem;
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  border-radius: 4px;
+  padding: 3.2rem 2.2rem;
   text-align: center;
   position: relative;
 }
@@ -91,128 +110,138 @@ body {
 /* ===== CABEÇALHO ===== */
 .institution {
   font-family: 'Cinzel', serif;
-  font-size: 0.8rem;
+  font-size: 0.76rem;
   letter-spacing: 4px;
   text-transform: uppercase;
-  color: #9cb3d1;
+  color: #a4bcd8;
   margin-bottom: 1.2rem;
+  font-weight: 500;
 }
 
 .divider-line {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: 2.2rem;
 }
 
 .divider-line::before,
 .divider-line::after {
   content: "";
   height: 1px;
-  width: 60px;
-  background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.5), transparent);
+  width: 70px;
+  background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.6), transparent);
 }
 
 .center-symbol {
   font-family: 'Cinzel', serif;
-  margin: 0 14px;
-  color: #d4af37;
-  font-size: 1.1rem;
+  margin: 0 16px;
+  color: #dfbe5b;
+  font-size: 1.15rem;
+  text-shadow: 0 0 10px rgba(223, 190, 91, 0.3);
 }
 
-/* ===== CONTEÚDO PRINCIPAL ===== */
+/* ===== TIPOGRAFIA PRINCIPAL ===== */
 .calligraphy-lead {
   font-family: 'Alex Brush', cursive;
-  font-size: 3.2rem;
-  color: #bfd7ff;
-  line-height: 1;
+  font-size: 3.4rem;
+  color: #d1e2ff;
+  line-height: 1.1;
   display: block;
-  margin-bottom: 0.2rem;
-  text-shadow: 0 0 20px rgba(191, 215, 255, 0.3);
+  margin-bottom: 0.3rem;
+  text-shadow: 0 0 25px rgba(180, 210, 255, 0.25);
 }
 
 .main-title {
   font-family: 'Cinzel', serif;
-  font-size: 1.7rem;
+  font-size: 1.65rem;
   font-weight: 500;
   letter-spacing: 5px;
   text-transform: uppercase;
   color: #ffffff;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.9rem;
 }
 
 .target-date {
-  font-size: 0.85rem;
-  letter-spacing: 3px;
-  color: #7b9ec2;
+  font-size: 0.82rem;
+  letter-spacing: 3.5px;
+  color: #8faecf;
   text-transform: uppercase;
-  margin-bottom: 2.8rem;
+  margin-bottom: 2.4rem;
+  font-weight: 400;
 }
 
-/* ===== CONTAGEM LINEAR ARTÍSTICA ===== */
+/* ===== CONTAGEM LINEAR (UX DE DIGITAÇÃO FIXA) ===== */
 .linear-countdown {
   display: inline-flex;
   align-items: baseline;
   justify-content: center;
-  gap: 0.8rem;
-  margin: 1.5rem 0 2.5rem;
-  padding: 1.2rem 2rem;
-  border-top: 1px solid rgba(138, 180, 248, 0.15);
-  border-bottom: 1px solid rgba(138, 180, 248, 0.15);
+  gap: 0.9rem;
+  margin: 1.2rem 0 2.4rem;
+  padding: 1.3rem 2.2rem;
+  border-top: 1px solid rgba(138, 180, 248, 0.16);
+  border-bottom: 1px solid rgba(138, 180, 248, 0.16);
+  background: rgba(255, 255, 255, 0.015);
+  border-radius: 2px;
 }
 
 .unit {
   display: flex;
   align-items: baseline;
-  gap: 0.25rem;
+  gap: 0.35rem;
 }
 
 .num {
   font-family: 'Cinzel', serif;
-  font-size: 2.4rem;
+  font-size: 2.5rem;
   font-weight: 600;
-  color: #eaf1fb;
+  color: #ffffff;
   line-height: 1;
+  /* Garante largura idêntica nos números para o layout não ficar oscilando */
+  font-variant-numeric: tabular-nums;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
 }
 
 .lbl {
-  font-size: 0.75rem;
-  letter-spacing: 1.5px;
-  color: #7d9cb8;
+  font-size: 0.72rem;
+  letter-spacing: 2px;
+  color: #9cb5d1;
   text-transform: uppercase;
+  font-weight: 500;
 }
 
 .dot {
-  color: #d4af37;
+  color: #dfbe5b;
   font-size: 1.4rem;
-  opacity: 0.6;
+  opacity: 0.7;
 }
 
+/* ===== TEXTO POÉTICO INFERIOR ===== */
 .poetic-text {
-  font-size: 0.95rem;
-  line-height: 1.8;
-  color: #a7bed9;
+  font-size: 0.92rem;
+  line-height: 1.9;
+  color: #bfd3e8; /* Mais contraste contra o fundo */
   font-weight: 300;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.6px;
   max-width: 440px;
   margin: 0 auto;
 }
 
 .footer {
-  margin-top: 2rem;
+  margin-top: 2.2rem;
 }
 
 .footer-psi {
   font-family: 'Cinzel', serif;
-  color: rgba(138, 180, 248, 0.4);
-  font-size: 1.2rem;
+  color: rgba(138, 180, 248, 0.35);
+  font-size: 1.15rem;
 }
 
 /* ===== TELA FINAL ===== */
 .final-screen {
   position: fixed;
   inset: 0;
-  background: #04080f;
+  background: #02050b;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -235,10 +264,11 @@ body {
 
 .final-psi {
   font-family: 'Cinzel', serif;
-  font-size: 3rem;
-  color: #d4af37;
+  font-size: 3.2rem;
+  color: #dfbe5b;
   display: block;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
+  filter: drop-shadow(0 0 12px rgba(223, 190, 91, 0.4));
 }
 
 .final-calligraphy {
@@ -256,10 +286,10 @@ body {
   margin-top: 1rem;
 }
 
-/* ===== RESPONSIVO ===== */
+/* ===== RESPONSIVO OTIMIZADO ===== */
 @media (max-width: 600px) {
   body {
-    padding: 0.75rem; /* Menos margem nas bordas da tela */
+    padding: 0.75rem;
   }
 
   .poster-frame {
@@ -267,11 +297,11 @@ body {
   }
 
   .inner-border {
-    padding: 2rem 0.5rem; /* Libera espaço horizontal */
+    padding: 2rem 0.6rem;
   }
 
   .calligraphy-lead {
-    font-size: 2.3rem;
+    font-size: 2.4rem;
   }
 
   .main-title {
@@ -285,30 +315,29 @@ body {
     margin-bottom: 1.8rem;
   }
 
-  /* Ajuste preciso para a linha caber inteira sem quebrar */
   .linear-countdown {
     width: 100%;
     box-sizing: border-box;
     display: flex;
-    justify-content: space-evenly; /* Distribui os 4 blocos uniformemente */
+    justify-content: space-evenly;
     gap: 0.15rem;
-    padding: 0.8rem 0;
+    padding: 0.85rem 0.2rem;
     margin: 1.2rem 0 2rem;
   }
 
   .unit {
-    flex-direction: column; /* No celular, o texto (dias/horas) fica logo abaixo do número */
+    flex-direction: column;
     align-items: center;
-    gap: 0.1rem;
+    gap: 0.15rem;
   }
 
   .num {
-    font-size: 1.35rem; /* Tamanho proporcional para não vazar */
+    font-size: 1.35rem;
   }
 
   .lbl {
     font-size: 0.6rem;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.6px;
   }
 
   .dot {
@@ -321,7 +350,7 @@ body {
   .poetic-text {
     font-size: 0.85rem;
     line-height: 1.6;
-    padding: 0 0.5rem;
+    padding: 0 0.4rem;
   }
 
   .final-calligraphy {
