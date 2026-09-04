@@ -35,4 +35,10 @@ Estou aprendendo a programar e decidi sair da teoria criando algo de verdade. Co
 
 ---
 
+## 📄 Licença
+
+Este projeto está sob a licença [MIT](LICENSE).
+
+---
+
 Feito por **Letícia Washington**  ✨
